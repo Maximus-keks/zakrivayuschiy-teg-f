@@ -176,6 +176,7 @@
   padding: 0;
   border: 2px solid transparent;
   background: transparent;
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -184,7 +185,6 @@
 
 .card__icon-button:focus-visible {
   border: var(--border-button, 2px solid rgb(0, 0, 0));
-  transition: border 0.3s ease;
 }
 
 .sparks { /*отключение искр*/
@@ -215,6 +215,10 @@
 }
 
 .buttons:focus {
+  outline: none;
+}
+
+.buttons:focus-visible {
   outline: none;
   box-shadow: 2px 2px 0px rgb(0, 0, 0);
 }
@@ -264,12 +268,12 @@ dialog[open] {
   row-gap: 30px;
   text-transform: uppercase;
   border: var(--border, solid rgb(0, 0, 0));
-  padding-inline: calc(4.5rem - clamp(1.875rem, 1.6109rem + 1.1268vw, 2.625rem));
+  padding-inline: calc(4.25rem - clamp(1.875rem, 1.6989rem + 0.7512vw, 2.375rem));
   padding-block: 30px;
  }
 
 dialog[open]::backdrop {
-  background-color: rgba(0 0 0 / 0.7);
+  background-color: rgba(0 0 0 / 0.75);
 }
 
 .diskette-dialog {
